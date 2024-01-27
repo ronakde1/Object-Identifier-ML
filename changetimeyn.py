@@ -1,5 +1,6 @@
 #Information about object detection
-print("This program allows you to change whether you would like to activate the rate change of the voice for the object detection")
+print("This program allows you to change whether you would like to activate the pause between the object classifications")
+      
 while True:
     #Input
     inputvalue=input("Enter a value of either Y for yes or N for no \n")
@@ -12,8 +13,7 @@ while True:
         break
     else:
         print("not an option")
-with open("Object-Identifier-ML\generalvariables\generalvariable1.txt", 'w') as file: #Opens file in write mode
+with open("Object-Identifier-ML\generalvariables\generalvariable2.txt", 'w') as file: #Opens file in write mode
     file.write(str(finalvalue)) #Writes value into file over the original value]
 
 
-    
