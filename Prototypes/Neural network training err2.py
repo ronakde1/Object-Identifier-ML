@@ -4,50 +4,50 @@ weights01=[]; weights12=[]; weights23=[]; weights34=[]; bias1=[]; bias2=[]; bias
 def load():
     global weights01; global weights12; global weights23; global weights34
     global bias1; global bias2; global bias3; global bias4
-    with open("Object-Identifer-ML\Weights\weights01.csv","r") as f:
+    with open("Object-Identifier-ML\Weights\weights01.csv","r") as f:
         rows=csv.reader(f)
         for row in rows:
             if len(row) !=0:
                 weights01.append(row)
         weights01=np.array(weights01)
 
-    with open("Object-Identifer-ML\Weights\weights12.csv","r") as f:
+    with open("Object-Identifier-ML\Weights\weights12.csv","r") as f:
         rows=csv.reader(f)
         for row in rows:
             if len(row) !=0:
                 weights12.append(row)
         weights12=np.array(weights12)
-    with open("Object-Identifer-ML\Weights\weights23.csv","r") as f:
+    with open("Object-Identifier-ML\Weights\weights23.csv","r") as f:
         rows=csv.reader(f)
         for row in rows:
             if len(row) !=0:
                 weights23.append(row)
         weights23=np.array(weights23)
-    with open("Object-Identifer-ML\Weights\weights34.csv","r") as f:
+    with open("Object-Identifier-ML\Weights\weights34.csv","r") as f:
         rows=csv.reader(f)
         for row in rows:
             if len(row) !=0:
                 weights34.append(row)
         weights34=np.array(weights34)
-    with open("Object-Identifer-ML/Weights/bias1.csv","r") as f:
+    with open("Object-Identifier-ML/Weights/bias1.csv","r") as f:
         rows=csv.reader(f)
         for row in rows:
             if len(row) !=0:
                 bias1.append(row)
         bias1=np.array(bias1[0])
-    with open("Object-Identifer-ML/Weights/bias2.csv","r") as f:
+    with open("Object-Identifier-ML/Weights/bias2.csv","r") as f:
         rows=csv.reader(f)
         for row in rows:
             if len(row) !=0:
                 bias2.append(row)
         bias2=np.array(bias2[0])
-    with open("Object-Identifer-ML/Weights/bias3.csv","r") as f:
+    with open("Object-Identifier-ML/Weights/bias3.csv","r") as f:
         rows=csv.reader(f)
         for row in rows:
             if len(row) !=0:
                 bias3.append(row)
         bias3=np.array(bias3[0])
-    with open("Object-Identifer-ML/Weights/bias4.csv","r") as f:
+    with open("Object-Identifier-ML/Weights/bias4.csv","r") as f:
         rows=csv.reader(f)
         for row in rows:
             if len(row) !=0:
@@ -56,95 +56,95 @@ def load():
 def store():    
     global weights01; global weights12; global weights23; global weights34
     global bias1; global bias2; global bias3; global bias4
-    with open("Object-Identifer-ML\Weights\weights01.csv","w") as f:
+    with open("Object-Identifier-ML\Weights\weights01.csv","w") as f:
         csv_writer=csv.writer(f)
         csv_writer.writerows(weights01.tolist())
-    with open("Object-Identifer-ML\Weights\weights12.csv","w") as f:
+    with open("Object-Identifier-ML\Weights\weights12.csv","w") as f:
         csv_writer=csv.writer(f)
         csv_writer.writerows(weights12.tolist())
-    with open("Object-Identifer-ML\Weights\weights23.csv","w") as f:
+    with open("Object-Identifier-ML\Weights\weights23.csv","w") as f:
         csv_writer=csv.writer(f)
         csv_writer.writerows(weights23.tolist())
-    with open("Object-Identifer-ML\Weights\weights34.csv","w") as f:
+    with open("Object-Identifier-ML\Weights\weights34.csv","w") as f:
         csv_writer=csv.writer(f)
         csv_writer.writerows(weights34.tolist())
-    with open("Object-Identifer-ML/Weights/bias1.csv","w") as f:
+    with open("Object-Identifier-ML/Weights/bias1.csv","w") as f:
         csv_writer=csv.writer(f)
         csv_writer.writerows(bias1.tolist())
-    with open("Object-Identifer-ML/Weights/bias2.csv","w") as f:
+    with open("Object-Identifier-ML/Weights/bias2.csv","w") as f:
         csv_writer=csv.writer(f)
         csv_writer.writerows(bias2.tolist())
-    with open("Object-Identifer-ML/Weights/bias3.csv","w") as f:
+    with open("Object-Identifier-ML/Weights/bias3.csv","w") as f:
         csv_writer=csv.writer(f)
         csv_writer.writerows(bias3.tolist())
-    with open("Object-Identifer-ML/Weights/bias4.csv","w") as f:
+    with open("Object-Identifier-ML/Weights/bias4.csv","w") as f:
         csv_writer=csv.writer(f)
         csv_writer.writerows(bias4.tolist())
 def store_fail(number):  
     global weights01; global weights12; global weights23; global weights34
     global bias1; global bias2; global bias3; global bias4
-    with open(f"Object-Identifer-ML\Weights\Failweights\{number}weights01.csv","w") as f:
+    with open(f"Object-Identifier-ML\Weights\Failweights\{number}weights01.csv","w") as f:
         csv_writer=csv.writer(f)
         csv_writer.writerows(weights01.tolist())
-    with open(f"Object-Identifer-ML\Weights\Failweights\{number}weights12.csv","w") as f:
+    with open(f"Object-Identifier-ML\Weights\Failweights\{number}weights12.csv","w") as f:
         csv_writer=csv.writer(f)
         csv_writer.writerows(weights12.tolist())
-    with open(f"Object-Identifer-ML\Weights\Failweights\{number}weights23.csv","w") as f:
+    with open(f"Object-Identifier-ML\Weights\Failweights\{number}weights23.csv","w") as f:
         csv_writer=csv.writer(f)
         csv_writer.writerows(weights23.tolist())
-    with open(f"Object-Identifer-ML\Weights\Failweights\{number}weights34.csv","w") as f:
+    with open(f"Object-Identifier-ML\Weights\Failweights\{number}weights34.csv","w") as f:
         csv_writer=csv.writer(f)
         csv_writer.writerows(weights34.tolist())
-    with open(f"Object-Identifer-ML/Weights/Failweights/{number}bias1.csv","w") as f:
+    with open(f"Object-Identifier-ML/Weights/Failweights/{number}bias1.csv","w") as f:
         csv_writer=csv.writer(f)
         csv_writer.writerows(bias1.tolist())
-    with open(f"Object-Identifer-ML/Weights/Failweights/{number}bias2.csv","w") as f:
+    with open(f"Object-Identifier-ML/Weights/Failweights/{number}bias2.csv","w") as f:
         csv_writer=csv.writer(f)
         csv_writer.writerows(bias2.tolist())
-    with open(f"Object-Identifer-ML/Weights/Failweights/{number}bias3.csv","w") as f:
+    with open(f"Object-Identifier-ML/Weights/Failweights/{number}bias3.csv","w") as f:
         csv_writer=csv.writer(f)
         csv_writer.writerows(bias3.tolist())
-    with open(f"Object-Identifer-ML/Weights/Failweights/{number}bias4.csv","w") as f:
+    with open(f"Object-Identifier-ML/Weights/Failweights/{number}bias4.csv","w") as f:
         csv_writer=csv.writer(f)
         csv_writer.writerows(bias4.tolist())
 def refreshvariables():
-    with open("Object-Identifer-ML/Weights/weights01.csv","w") as f:
+    with open("Object-Identifier-ML/Weights/weights01.csv","w") as f:
         csv_writer=csv.writer(f)
 
         weights01=np.random.normal(0, 1, size=(40000,20)).tolist()
         csv_writer.writerows(weights01)
 
-    with open('Object-Identifer-ML/Weights/bias1.csv',"w") as f:
+    with open('Object-Identifier-ML/Weights/bias1.csv',"w") as f:
         csv_writer=csv.writer(f)
         bias1=np.random.normal(0, 1, size=(20)).tolist()
         csv_writer.writerow(bias1)
 
-    with open("Object-Identifer-ML/Weights/weights12.csv","w") as f:
+    with open("Object-Identifier-ML/Weights/weights12.csv","w") as f:
         csv_writer=csv.writer(f)
         weights12=np.random.normal(0, 1, size=(20,20)).tolist()
         csv_writer.writerows(weights12)
 
-    with open('Object-Identifer-ML/Weights/bias2.csv',"w") as f:
+    with open('Object-Identifier-ML/Weights/bias2.csv',"w") as f:
         csv_writer=csv.writer(f)
         bias2=np.random.normal(0, 1, size=(20)).tolist()
         csv_writer.writerow(bias2)
 
-    with open("Object-Identifer-ML/Weights/weights23.csv","w") as f:
+    with open("Object-Identifier-ML/Weights/weights23.csv","w") as f:
         csv_writer=csv.writer(f)
         weights23=np.random.normal(0, 1, size=(20,20)).tolist()
         csv_writer.writerows(weights23)
 
-    with open('Object-Identifer-ML/Weights/bias3.csv',"w") as f:
+    with open('Object-Identifier-ML/Weights/bias3.csv',"w") as f:
         csv_writer=csv.writer(f)
         bias3=np.random.normal(0, 1, size=(20)).tolist()
         csv_writer.writerow(bias3)
 
-    with open("Object-Identifer-ML/Weights/weights34.csv","w") as f:
+    with open("Object-Identifier-ML/Weights/weights34.csv","w") as f:
         csv_writer=csv.writer(f)
         weights34=np.random.normal(0, 1, size=(20, 5)).tolist()
         csv_writer.writerows(weights34)
 
-    with open('Object-Identifer-ML/Weights/bias4.csv',"w") as f:
+    with open('Object-Identifier-ML/Weights/bias4.csv',"w") as f:
         csv_writer=csv.writer(f)
         bias4=np.random.normal(0, 1, size=(5)).tolist()
         csv_writer.writerow(bias4)
@@ -155,7 +155,7 @@ class MLfuntions:
         for i in objectnames: 
             for two in range(2):
                 pixelarray=[]
-                with open(f"Object-Identifer-ML/DataCSV/{i}/{i} ({index*2-two}).csv","r") as f:
+                with open(f"Object-Identifier-ML/DataCSV/{i}/{i} ({index*2-two}).csv","r") as f:
                     csvthingy=csv.reader(f)
                     for row in csvthingy:
                         if len(row) !=0:

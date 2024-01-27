@@ -12,7 +12,7 @@ while True:
         break
     else:
         print("not an option")
-with open("Object-Identifer-ML\generalvariable.txt", 'w') as file: #Opens file in write mode
+with open("Object-Identifier-ML\generalvariable.txt", 'w') as file: #Opens file in write mode
     file.write(str(finalvalue)) #Writes value into file over the original value]
 
 
