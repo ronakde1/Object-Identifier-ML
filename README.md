@@ -30,6 +30,7 @@ Once Raspberry Pi is booted, enter username and password to program. Then connec
 After this, install Python if not done already and install Git on the Raspberry Pi. Visual studio code is also required to be installed. You must also sign into visual studio code on the computer. This can be done by opening a git terminal and running the following commands with your email and name.
 
 ```git config --global user.name "your-name"```
+
 ```git config --global user.email "your.name@domain.com"```
  
 You can check the git configuration files using the command below 
