@@ -27,9 +27,15 @@ Then connect to power. Raspberry Pi should boot. If not, repeat the first steps 
 
 Once Raspberry Pi is booted, enter username and password to program. Then connect device to internet. 
 
-After this, install Python if not done already and install Git on the Raspberry Pi. Visual studio code is also required to be installed. You must also sign into visual studio code on the computer. This can be done by opening a git terminal and running the following commands with your email and name 
+After this, install Python if not done already and install Git on the Raspberry Pi. Visual studio code is also required to be installed. You must also sign into visual studio code on the computer. This can be done by opening a git terminal and running the following commands with your email and name.
+
+```git config --global user.name "your-name"```
+
+```git config --global user.email "your.name@domain.com"```
  
 You can check the git configuration files using the command below 
+
+```git config --list```
  
 After this, go to visual studio code and type ```ctrl shift p```. Then select pull and enter URL of git repository. If the program asks you to store the program in a specific location, ensure that the folder name is ```Object-Identifier-ML```. This is not the same as the repository so this must be changed. If this is not possible, this can be changed within the programs. 
 
